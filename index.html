@@ -3,15 +3,71 @@
 	<head>
 		<meta charset="utf-8">
 		<title> My Profile </title>
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,600,600i|Poppins:700,700i,800,800i&display=swap" rel="stylesheet">
+		<style type="text/css">
+        	body {
+        		background-color: #F2E6D8;
+        		height: 100vh;
+        		padding: 10%;
+        		padding-top: 0;
+        		display: block;
+        		justify-content: center;
+        		align-items: center;
+        		font-family: 'Fira Sans', sans-serif;
+        	}
+
+
+        	.header {
+        		background-color: #085A8C;
+				position: -webkit-sticky;
+				position: sticky;
+				top: 0;
+        	}
+
+        	h1 {
+        		font-family: 'Poppins', sans-serif;
+        		font-style: 800;
+        		font-size: 7vh;
+        		text-align: center;
+        		color: #F2E6D8;
+        	}
+
+        	.bio {
+        		display: grid;
+        		grid-template-columns: 50% 50%;
+        	}
+
+        	.bio p {
+        		margin-left: 5%;
+        		margin-right: 5%;
+        		text-align: justify;
+
+        		font-size: 2.5vh;
+        		line-height: 3.75vh;
+        	}
+
+        	.pic {
+        		width: 100%;
+        		object-fit: cover;
+				margin-left: 0;
+				margin-right: 0;
+        	}
+
+        </style>
 	</head>
 
 	<body>
-		<h1> Kayla Areglado </h1>
-		<img src="baby-me.jpg" alt="Kayla as a baby" height=200px>
+		<div class="header">
+			<h1> Kayla Areglado </h1>
+		</div>
 
-		<p>
-			Kayla is currently a student in The New School's dual-degree BA/BFA program. She is taking up her in BA in Culture and Media Studies and her BFA in Communication Design.
-		</p>
+		<div class="bio">
+			<img src="baby-me.jpg" alt="Kayla as a baby" class="pic" id="babypic">
+			<p>
+				Kayla is currently a student in The New School's dual-degree BA/BFA program. She is taking up her in BA in Culture and Media Studies and her BFA in Communication Design. After moving to New York after being born and raised in the Philippines, her work as an artist greatly revolves around the theme of identity and diaspora. Her interest in Culture and Media studies came about after being exposed to the different cultural and social backgrounds of the people in New York. 
+			</p>
+		</div>
+		
 
 		<br>
 		
@@ -35,8 +91,6 @@
 
 		<p> me coding (jk i wish) </p>
 		<iframe src="https://giphy.com/embed/o0vwzuFwCGAFO" width="250" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-
-		<br>
 
 		<footer>
 			<a href="https://boalm247.github.io"> Morgan's Profile! </a>
