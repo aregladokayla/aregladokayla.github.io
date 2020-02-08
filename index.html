@@ -6,52 +6,97 @@
 		<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,600,600i|Poppins:700,700i,800,800i&display=swap" rel="stylesheet">
 		<style type="text/css">
         	body {
-        		background-color: #F2E6D8;
-        		height: 100vh;
-        		padding: 10%;
-        		padding-top: 0;
-        		display: block;
-        		justify-content: center;
-        		align-items: center;
+        		background-color: #F4F4F4;
+        		display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: repeat(10 auto);
+				grid-row-gap: 3rem;
         		font-family: 'Fira Sans', sans-serif;
+				margin: 5rem;
+				margin-top: 0;
         	}
 
+			h1 {
+        		font-family: 'Poppins', sans-serif;
+        		font-style: 800;
+        		font-size: 4rem;
+        	}
+
+			h3 {
+				font-size: 2.75rem;
+			}
+
+			p {
+				font-size: 1.2rem;
+        		line-height: 1.7rem;
+			}
+
+			li {
+				font-size: 1.2rem;
+        		line-height: 1.7rem;
+			}
 
         	.header {
-        		background-color: #085A8C;
+				background-color: #F4F4F4;
 				position: -webkit-sticky;
 				position: sticky;
 				top: 0;
+				grid-column: 1 / span 2;
+				grid-row: 1;
+				height: auto;
+				margin: 0;
+				z-index: 5;
+				text-align: left;
+        		color: #BC122C;
+				border-bottom: 2px solid #082B58;
         	}
 
-        	h1 {
-        		font-family: 'Poppins', sans-serif;
-        		font-style: 800;
-        		font-size: 7vh;
-        		text-align: center;
-        		color: #F2E6D8;
-        	}
+			.bio {
+				background-color: #082B58;
+				height: auto;
+			}
 
-        	.bio {
-        		display: grid;
-        		grid-template-columns: 50% 50%;
+			img {
+				background-color: #082B58;
+				width: 100%;
+        		object-fit: cover;
+				grid-column: 1 / span 1;
+				grid-row: 2 / span 1;
+				justify-items: center;
         	}
 
         	.bio p {
-        		margin-left: 5%;
-        		margin-right: 5%;
-        		text-align: justify;
-
-        		font-size: 2.5vh;
-        		line-height: 3.75vh;
+        		display: inline-grid;
+        		font-size: 1.2rem;
+        		line-height: 1.7rem;
+				grid-column: 2 / span 1;
+				grid-row: 2;
+				margin: 3rem;
+				color: #F4F4F4;
         	}
 
-        	.pic {
-        		width: 100%;
-        		object-fit: cover;
-				margin-left: 0;
-				margin-right: 0;
-        	}
+			.websites {
+				grid-column: 2 / span 1;
+				grid-row: 2;
+				background: #F4F4F4;
+				padding: 4rem;
+				padding-top: 0.5rem;
+				color: black;
+			}
+
+			.quote {
+				grid-row: 3;
+				grid-column: 1 / span 2;
+				background: #F7B62D;
+				padding: 3rem;
+			}
+
+			footer {
+				grid-row: 5;
+				grid-column: 1 / span 2;
+				background-color: #BC122C;
+				height: 4rem;
+			}
 
         </style>
 	</head>
@@ -68,9 +113,9 @@
 			</p>
 		</div>
 		
-
 		<br>
 		
+		<div class="websites">
 		<h3> My Most Visited Websites </h3>
 			<ol>
 				<li><a href="https://www.netflix.com/browse"> Netflix </a></li>
@@ -79,18 +124,21 @@
 				<li><a href="https://jstris.jezevec10.com/"> Tetris Arena </a></li>
 				<li><a href="http://gmail.com"> GMail </a></li>
 			</ol>
+			<br>
+			<br>
+			<br>
+			
+			<iframe src="https://giphy.com/embed/H7kfFDvD9HSYGRbvid" width="480" height="318" frameBorder="0" class="giphy-embed"
+			allowFullScreen></iframe>
 		
-		<br>
+		</div>
 
-		<h3> Words from Georges Bataille </h3>
-		<p>
-			On the most fundamental level, there are transitions from continuous to discontinuous or from discontinuous to continuous. We are discontinuous beings, individuals who perish in isolation in the midst of an incomprehensible adventure, but we yearn for our lost continuity.
-		</p>
-	
-		<br>
-
-		<p> me coding (jk i wish) </p>
-		<iframe src="https://giphy.com/embed/o0vwzuFwCGAFO" width="250" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+		<div class="quote">
+			<h3> Words from Georges Bataille </h3>
+			<p>
+				"On the most fundamental level, there are transitions from continuous to discontinuous or from discontinuous to continuous. We are discontinuous beings, individuals who perish in isolation in the midst of an incomprehensible adventure, but we yearn for our lost continuity."
+			</p>
+		</div>
 
 		<footer>
 			<a href="https://boalm247.github.io"> Morgan's Profile! </a>
