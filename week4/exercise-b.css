@@ -21,10 +21,6 @@ img {
     transition-duration: 0.5s;
 }
 
-img:hover {
-    opacity: 0.25;
-}
-
 h2 {
     font-family: 'Playfair Display', serif;
     font-style: italic;
