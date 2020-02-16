@@ -1,0 +1,78 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: white;
+    display: grid;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr .2fr;
+    grid-column-gap: 2vw; 
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    transition-duration: 0.5s;
+}
+
+img:hover {
+    opacity: 0.25;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.button1 {
+    width: 0;
+    height: 0;
+    border-top: 2rem solid transparent;
+    border-left: 3.5rem solid rgb(0, 87, 128);
+    border-bottom: 2rem solid transparent;
+    margin: 0 auto;
+}
+
+.button2 {
+    width: 0;
+    height: 0;
+    border-top: 2rem solid transparent;
+    border-left: 3.5rem solid rgb(238, 140, 74);
+    border-bottom: 2rem solid transparent;
+    margin: 0 auto;
+}
+
+.button3 {
+    width: 0;
+    height: 0;
+    border-top: 2rem solid transparent;
+    border-left: 3.5rem solid rgb(195, 131, 255);
+    border-bottom: 2rem solid transparent;
+    margin: 0 auto;
+}
+
+.play {
+    transition-duration: 0.5s;
+}
+.play:hover {
+    transform: scale(1.5);
+}
