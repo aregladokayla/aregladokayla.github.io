@@ -5,15 +5,11 @@
     <meta charset="utf-8">
     <title> Exercise B: Partner </title>
     <style type="text/css">
-        html {
-            height: 0;
-            width: 0;
-        }
-        
         body {
             background-color: rgb(187, 227, 243);
             margin: 0;
             padding: 0;
+            overflow: hidden;
         }
 
         @keyframes flow {
@@ -21,7 +17,7 @@
         }
 
         @keyframes flow2 {
-            100% {transform: scale(2.10);}
+            100% {transform: scale(2.5);}
         }
 
         @keyframes rock {
@@ -34,7 +30,7 @@
             height: 45vh;
             width: 110vw;
             position: relative;
-            top: 100vh;
+            top: 60vh;
             animation-name: flow;
             animation-duration: 2s;
             animation-direction: alternate;
@@ -44,10 +40,10 @@
 
         .rectangle2 {
             background-color: rgb(21, 67, 104);
-            height: 35vh;
+            height: 30vh;
             width: 110vw;
             position: relative;
-            top: 65vh;
+            top: 30vh;
             opacity: 0.5;
             animation-name: flow2;
             animation-duration: 2s;
@@ -63,7 +59,7 @@
             width: 20rem;
             position: absolute;
             left: 40vw;
-            top: 87vh;
+            top: 45vh;
             transform: rotate(180deg);
             z-index: 2;
             animation-name: rock;
@@ -102,7 +98,6 @@
         <div class="stick"></div>
         <div class="triangle1"></div>
         <div class="triangle2"></div>
-    </div>
-    
+    </div>    
 </body>
 </html>
