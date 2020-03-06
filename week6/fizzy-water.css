@@ -108,3 +108,13 @@ body {
     top: 0% !important;
     opacity: 0%;
 }
+
+#table {
+    width: 125vw;
+    height: 100vh;
+    position: absolute;
+    top: 60vh;
+    background-color: #fde7f3;
+
+    transform: rotateZ(10deg);
+}
