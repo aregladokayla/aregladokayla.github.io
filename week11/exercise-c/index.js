@@ -42,8 +42,6 @@ function variationThree(sentence) {
   output.innerHTML = newSentence.replace(' stupid and ridiculous ', "<span style='writing-mode: vertical-rl;'> stupid and ridiculous </span>" );
 }
 
-
-
 let input = document.querySelector('#sentence');
 
 // recomput when the input text changes
