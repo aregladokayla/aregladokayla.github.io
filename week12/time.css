@@ -1,0 +1,21 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3vh;
+}
+
+.window {
+    height: 30rem;
+    width: 30rem;
+    margin: auto;
+    background: linear-gradient(0deg,#f5b94a, #e63636, #073066, #e63636, #f5b94a);
+	background-size: 200% 200%;
+	animation: gradient 60s infinite linear;
+    border: 2rem solid lightgray;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 0% 200%;}
+}
+

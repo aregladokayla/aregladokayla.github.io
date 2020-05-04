@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Beatrice';
+    src: url('BeatriceTRIAL-Thin.woff2') format('woff2'),
+        url('BeatriceTRIAL-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Beatrice';
+    src: url('BeatriceTRIAL-Light.woff2') format('woff2'),
+        url('BeatriceTRIAL-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Beatrice';
+    src: url('BeatriceTRIAL-Extrabold.woff2') format('woff2'),
+        url('BeatriceTRIAL-Extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Beatrice';
+    src: url('BeatriceTRIAL-Regular.woff2') format('woff2'),
+        url('BeatriceTRIAL-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Beatrice';
+    src: url('BeatriceTRIAL-RegularItalic.woff2') format('woff2'),
+        url('BeatriceTRIAL-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Beatrice';
+    src: url('BeatriceTRIAL-LightItalic.woff2') format('woff2'),
+        url('BeatriceTRIAL-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Beatrice';
+    src: url('BeatriceTRIAL-Medium.woff2') format('woff2'),
+        url('BeatriceTRIAL-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Beatrice';
+    src: url('BeatriceTRIAL-SemiboldItalic.woff2') format('woff2'),
+        url('BeatriceTRIAL-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Beatrice';
+    src: url('BeatriceTRIAL-MediumItalic.woff2') format('woff2'),
+        url('BeatriceTRIAL-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Beatrice';
+    src: url('BeatriceTRIAL-ExtraboldItalic.woff2') format('woff2'),
+        url('BeatriceTRIAL-ExtraboldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Beatrice';
+    src: url('BeatriceTRIAL-BoldItalic.woff2') format('woff2'),
+        url('BeatriceTRIAL-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Beatrice';
+    src: url('BeatriceTRIAL-Bold.woff2') format('woff2'),
+        url('BeatriceTRIAL-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Beatrice';
+    src: url('BeatriceTRIAL-ThinItalic.woff2') format('woff2'),
+        url('BeatriceTRIAL-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Beatrice';
+    src: url('BeatriceTRIAL-Semibold.woff2') format('woff2'),
+        url('BeatriceTRIAL-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
