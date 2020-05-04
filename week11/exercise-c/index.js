@@ -21,7 +21,7 @@ function variationOne(sentence) {
 
   // modify the sentence
 
-  output.innerHTML = newSentence.replace(' stupid and ridiculous ', ' $ToOP1d and R!d1cuLu0$');
+  output.innerHTML = newSentence.replace(' stupid and ridiculous ', "<span style='letter-spacing: -2px; font-size: 1.4rem;'> $ToOP1d and R!d1cuLu0$ </span>");
 }
 
 function variationTwo(sentence) {
