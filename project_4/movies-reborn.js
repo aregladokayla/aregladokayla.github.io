@@ -239,6 +239,9 @@ let movieData = [
 ];
 
 function displayMovie() {
+    // empty container before displaying
+    movieContainer.innerHTML = '';
+    
     movieData.forEach(function (movie) {
         let trailerContainer = document.createElement('div');
         trailerContainer.classList = `trailer-container ${movie.class}`;
@@ -250,21 +253,14 @@ function displayMovie() {
 }
 
 function displayInfo() {
+    // empty container before displaying
+    infoContainer.innerHTML = '';
+    
     movieData.forEach(function (movie) {
         let indivInfoContainer = document.createElement('div');
         indivInfoContainer.classList = `info-container ${movie.class}`;
         
         indivInfoContainer.innerHTML += `<h1> ${movie.title} </h1> <p> ${movie.date} </p>`
-        infoContainer.appendChild(indivInfoContainer);
-    });
-}
-
-function displayOriginalYear() {
-    movieData.forEach(function (movie) {
-        let indivInfoContainer = document.createElement('div');
-        indivInfoContainer.classList = `info-container ${movie.class}`;
-
-        indivInfoContainer.innerHTML += `<h1> ${movie.title} </h1> <p> ${movie.original} </p>`
         infoContainer.appendChild(indivInfoContainer);
     });
 }
@@ -333,25 +329,21 @@ document.querySelector('#sortDropdown-1').addEventListener('change', function (e
     if (filter == "newest") {
         movieData.sort(newestSort);
         console.log('Sorting titles from newest to oldest movie franchise');
-        infoContainer.innerHTML = '';
         displayInfo();
     } 
     
     else if (filter == "alpha") {
         movieData.sort(alphabetical);
         console.log('Sorting titles alphabetically');
-        infoContainer.innerHTML = '';
         displayInfo();
     } 
     
     else if (filter =="oldestOriginal") {
         movieData.sort(oldestOriginal);
         console.log('Sorting titles from oldest to newest original release');
-        infoContainer.innerHTML = '';
-        displayOriginalYear();
+        displayInfo();
     }
 
-    movieContainer.innerHTML = '',
     displayMovie();
 });
 
@@ -359,14 +351,17 @@ document.querySelector('#sortDropdown-2').addEventListener('change', function (e
     let filter = evt.target.value;  
     
     if (filter == "indivNewest") {
-        movieData.movies.sort(indivNewest);
+        movieData.forEach(function (movie) {
+          movie.movies.sort(indivNewest);
+        });
         console.log('Sorting trailers by latest release');
-        trailerContainer.innerHTML = '';
-        displayIndivNewest();
+        displayMovie();
     } 
     
     else if (filter == "indivEarliest") {
-        movie.movies.sort(indivEarliest);
+        movieData.forEach(function (movie) {
+          movie.movies.sort(indivEarliest);
+        });
         console.log('sorting movies by earliest release');
         displayMovie();
     }
